@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(202, 55, 55);
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+}
+
+.nav-links{
+    /*Quitar viñetas*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li{
+    margin-left: 20px;
+}
+/*Estilos de la seccion hero*/
+.hero{
+    background-image: url("https://wolfoffranchises.com/wp-content/uploads/sites/2/2022/09/Tim-Hortons-Franchise.jpeg");
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    color:rgb(255, 255, 255);
+    padding: 100px 0;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/*Seccion de productos*/
+.featured-products{
+    padding: 50px;
+    text-align: center;
+    color:rgb(69, 48, 48);
+}
+
+.product-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: rgb(69, 48, 48);
+}
+
+.product{
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.product img{
+    width:100%;
+    height: 170px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/*Estilos del pie de pagina*/
+footer{
+    background-color: rgb(202, 55, 55);
+    color:antiquewhite;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espacio entre íconos */
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: antiquewhite; /* Cambia según el color deseado */
+    font-size: 24px; /* Tamaño del icono */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffcc00; /* Cambia el color al pasar el cursor */
+}
+
+
