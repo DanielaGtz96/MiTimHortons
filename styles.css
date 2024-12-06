@@ -123,25 +123,25 @@ body {
     margin-bottom: 10px;
 }
 
-.Bebidas-de-temporada{
+.Bebidas-de-temporada {
     padding: 50px;
     text-align: center;
 }
 
-.grid-container{
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
 
-.Bebidas-de-temporada img{
+.Bebidas-de-temporada img {
     width: 100%;
     height: 220px;
     object-fit: contain;
     padding: 25px;
 }
 
-/*SECCION DE MIEMBROS*/
+/* SECCION DE MIEMBROS */
 .equipo {
     background-color: antiquewhite;
     display: grid;
@@ -157,7 +157,6 @@ body {
     max-width: 1200px; /* Establece un ancho máximo para evitar que se expanda demasiado */
     width: 100%;
 }
-
 
 .miembro {
     width: 100%; /* Hace que cada miembro ocupe todo el espacio dentro de su celda */
@@ -195,4 +194,145 @@ footer {
 
 .social-icons a:hover {
     color: #ffcc00; /* Cambia el color al pasar el cursor */
+}
+
+.newsletters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.newsletters input[type="email"] {
+    padding: 8px;
+    border: 2px solid rgb(249, 152, 26);
+    border-top-left-radius: 4px;
+}
+
+.newsletters button[type="submit"] {
+    background-color: #ffcc00;
+    color: antiquewhite;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Nuevos estilos para el menú */
+.menu-section {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+}
+
+.menu-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: rgb(69, 48, 48);
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.menu-item h3 {
+    font-size: 1.5rem;
+    color: rgb(202, 55, 55);
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 1rem;
+    color: rgb(69, 48, 48);
+    margin-bottom: 15px;
+}
+
+.menu-item .price {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo para la sección de Menú */
+.menu-section {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+}
+
+.menu-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: rgb(69, 48, 48);
+}
+
+/* Grid para los productos */
+.grid-sandwich {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
+    grid-template-rows: repeat(2, 260px); /* 2 filas de 260px */
+    gap: 20px; /* Espaciado entre los elementos */
+    grid-template-areas: 
+        "sandwich1 sandwich1 sandwich2 sandwich3"
+        "sandwich1 sandwich1 sandwichPollo sandwich5"; /* Definir áreas */
+}
+
+/* Estilo para los productos */
+.sandwich {
+    border: 1px solid gray;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sandwich img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Asignar áreas a los productos */
+.sandwich:nth-child(1) { grid-area: sandwich1; }
+.sandwich:nth-child(2) { grid-area: sandwich2; }
+.sandwich:nth-child(3) { grid-area: sandwich3; }
+.sandwich:nth-child(4) { grid-area: sandwichPollo; }
+.sandwich:nth-child(5) { grid-area: sandwich5; }
+
+/* Efecto hover para los productos */
+.sandwich:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo de los precios */
+.price {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
 }
