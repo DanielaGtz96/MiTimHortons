@@ -16,10 +16,10 @@
                 <img src="https://work4tims.com/wp-content/uploads/2023/04/Logo-6c0ae97-scaled.jpg" alt="Logo Tim Hortons">
             </div>
             <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
+                <li><a href="#" onclick="redirigir('index.html')">Inicio</a></li>
                 <li><a href="#" onclick="redirigir('menu.html')">Menú</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#" onclick="redirigir('nosotros.html')">Nosotros</a></li>
+                <li><a href="#" onclick="redirigir('contacto.html')">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -139,6 +139,12 @@
             </form>
         </div>
     </footer>
+    <script>
+        function redirigir(url) {
+            window.location.href = url; 
+        }
+    </script>
+
     <script src="main.js"></script>
 </body>
 </html>

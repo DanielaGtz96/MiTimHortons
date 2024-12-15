@@ -1,3 +1,3 @@
-function redirigir(url){
+function redirigir(url) {
     window.location.href = url;
 }

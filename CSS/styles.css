@@ -217,125 +217,56 @@ footer {
 }
 
 /* Nuevos estilos para el menú */
-.menu-section {
-    background-color: #f4f4f4;
-    padding: 50px;
-    text-align: center;
-}
 
-.menu-title {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: rgb(69, 48, 48);
-}
 
-.menu-items {
+.menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    justify-items: center;
+    align-items: start;
+    margin: 20px;
 }
 
 .menu-item {
+    text-align: center;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.menu-item img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.menu-item h3 {
-    font-size: 1.5rem;
-    color: rgb(202, 55, 55);
-    margin-bottom: 10px;
-}
-
-.menu-item p {
-    font-size: 1rem;
-    color: rgb(69, 48, 48);
-    margin-bottom: 15px;
-}
-
-.menu-item .price {
-    font-size: 1.2rem;
-    color: #333;
-    font-weight: bold;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .menu-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
 }
 
-/* Estilo para la sección de Menú */
-.menu-section {
-    background-color: #f4f4f4;
-    padding: 50px;
-    text-align: center;
+.menu-item img {
+    width: 100%; /* Hace que la imagen ocupe el ancho del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    object-fit: contain; /* Asegura que la imagen se ajuste completamente sin recortarse */
+    border-radius: 8px; /* Opcional: bordes redondeados */
+    max-height: 200px; /* Altura máxima para uniformidad */
 }
 
-.menu-title {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: rgb(69, 48, 48);
-}
-
-/* Grid para los productos */
-.grid-sandwich {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
-    grid-template-rows: repeat(2, 260px); /* 2 filas de 260px */
-    gap: 20px; /* Espaciado entre los elementos */
-    grid-template-areas: 
-        "sandwich1 sandwich1 sandwich2 sandwich3"
-        "sandwich1 sandwich1 sandwichPollo sandwich5"; /* Definir áreas */
-}
-
-/* Estilo para los productos */
-.sandwich {
-    border: 1px solid gray;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.sandwich img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-
-/* Asignar áreas a los productos */
-.sandwich:nth-child(1) { grid-area: sandwich1; }
-.sandwich:nth-child(2) { grid-area: sandwich2; }
-.sandwich:nth-child(3) { grid-area: sandwich3; }
-.sandwich:nth-child(4) { grid-area: sandwichPollo; }
-.sandwich:nth-child(5) { grid-area: sandwich5; }
-
-/* Efecto hover para los productos */
-.sandwich:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
-}
-
-/* Estilo de los precios */
-.price {
-    font-size: 1.2rem;
+.menu-item h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
     color: #333;
-    font-weight: bold;
 }
+
+.menu-item p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.price {
+    font-weight: bold;
+    color: #e63946;
+    font-size: 1.1em;
+}
+
 
 /* Estilos para la sección "Nosotros" */
 .nosotros {
@@ -396,3 +327,4 @@ footer {
         height: 150px; /* Ajusta la altura de las imágenes */
     }
 }
+

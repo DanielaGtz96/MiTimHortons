@@ -9,20 +9,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <!-- Encabezado -->
     <header>
         <nav class="navbar">
             <div class="logo">
                 <img src="https://work4tims.com/wp-content/uploads/2023/04/Logo-6c0ae97-scaled.jpg" alt="Logo Tim Hortons">
             </div>
             <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Menú</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#" onclick="redirigir('index.html')">Inicio</a></li>
+                <li><a href="#" onclick="redirigir('menu.html')">Menú</a></li>
+                <li><a href="#" onclick="redirigir('nosotros.html')">Nosotros</a></li>
+                <li><a href="#" onclick="redirigir('contacto.html')">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Sección Hero -->
     <section class="hero">
         <div class="hero-content">
             <h2>Always fresh</h2>
@@ -31,34 +33,35 @@
         </div>
     </section>
 
+    <!-- Sección Menú -->
     <section class="menu-section">
         <h2 class="menu-title">Menú</h2>
-        <div class="grid-sandwich">
-            <div class="menu-item sandwich">
+        <div class="menu-grid">
+            <div class="menu-item">
                 <img src="https://img.cdn4dd.com/p/fit=cover,width=1200,height=1200,format=auto,quality=90/media/photos/a4166ddd-f6c2-4d94-88b5-38da664c0547-retina-large-jpeg" alt="Café Americano">
                 <h3>Café Americano</h3>
                 <p>Un clásico para comenzar el día.</p>
                 <p class="price">$2.50</p>
             </div>
-            <div class="menu-item sandwich">
+            <div class="menu-item">
                 <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=600,height=400,format=auto,quality=80/https://doordash-static.s3.amazonaws.com/media/store/header/49292989-91a0-44f1-9b20-baa75d911808.9" alt="Cold Brew">
                 <h3>Cold Brew</h3>
                 <p>Enfriado y filtrado durante 12-24 horas.</p>
                 <p class="price">$3.00</p>
             </div>
-            <div class="menu-item sandwich">
+            <div class="menu-item">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQijEthbkb-x1wRuRk75vf3IE1WdiUktdXmeA&s" alt="Frapuccino Latte Macchiato">
                 <h3>Frapuccino Latte Macchiato</h3>
                 <p>Mezcla de caramelo, vainilla y café.</p>
                 <p class="price">$3.50</p>
             </div>
-            <div class="menu-item sandwich">
+            <div class="menu-item">
                 <img src="https://foodgressing.com/wp-content/uploads/2020/12/Top-10-Tim-Hortons-Donuts-Canada.jpg.webp" alt="Donas">
                 <h3>Donas</h3>
                 <p>Horneadas en pequeños lotes y glaseadas a mano.</p>
                 <p class="price">$1.50</p>
             </div>
-            <div class="menu-item sandwich">
+            <div class="menu-item">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjUPGt-pYRC1AUWT6cA8k1NjnD-7D7H8GXaA&s" alt="Bagels">
                 <h3>Bagels</h3>
                 <p>Con opciones como queso crema, mermelada o tostado francés.</p>
@@ -66,8 +69,8 @@
             </div>
         </div>
     </section>
-    
 
+    <!-- Pie de página -->
     <footer>
         <p>&copy; 2024 Mi Cafetería</p>
         <div class="social-icons">
@@ -84,5 +87,12 @@
             </form>
         </div>
     </footer>
+    <script>
+        function redirigir(url) {
+            window.location.href = url; 
+        }
+    </script>
+
+    <script src="main.js"></script>
 </body>
 </html>
